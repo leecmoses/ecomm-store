@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { createAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
+
 // Use object for the generalized handleChange
 const defaultFormFields = {
   displayName: "",
@@ -13,6 +15,16 @@ const SignUpForm = () => {
   const { displayName, email, password, confirmPassword } = formFields;
 
   console.log(formFields);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Confirm password matches
+
+    // Authenticate the user
+
+    // Create the user document
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
